@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+        div {
+            margin: 30px auto;
+            width: 500px;
+            height: 300px;
+        }
+        .satu {
+            /* (warna awal, warna akhir) */
+            background-image: linear-gradient(blue, aqua, white);
+        }
+        .dua {
+            /* pake arah atau derajat (to top, to right top), (45deg, 90deg) */
+            background: linear-gradient(to right, lightgreen, blue, red);
+        }
+        .tiga {
+            /* color stop disinmpan setelah warna */
+            background: linear-gradient(blue 20%,white, white, red 80%);
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* Animation:
+            name, duration, timing-function, delay, iteration-count,
+            direction, fill-mode, play-state */
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: animasiKotak ;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: 3;
+            /* modenya mau; normal, reverse, alternate */
+            animation-direction: alternate;
+            /* agar berhenti di iterasi terakhir */
+            animation-fill-mode: forwards;
+            /* bisa juga ditulis gabung
+            animation: animasiKotak 2s ease 3 alternate formards */
+        }
+        @keyframes animasiKotak{
+            0%{
+                width: 100px;
+            }
+            50% {
+                width: 200px;
+                height: 100px;
+            }
+            100% {
+                width: 300px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    
+</body>
+</html>
